@@ -47,6 +47,11 @@ dependencies {
     // https://mvnrepository.com/artifact/javax.servlet/jstl
     implementation 'javax.servlet:jstl:1.2'
 
+    implementation 'org.springframework:spring-core:5.3.16'
+    implementation 'org.springframework:spring-context:5.3.16'
+    implementation 'org.springframework:spring-test:5.3.16'
+    implementation 'org.springframework:spring-webmvc:5.3.16'
+
 }
 
 test {
