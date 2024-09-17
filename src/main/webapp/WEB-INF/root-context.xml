@@ -24,18 +24,8 @@
     <bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
         <constructor-arg ref="hikariConfig" />
     </bean>
-    <!--&lt;!&ndash; HikariDataSource 설정 &ndash;&gt;
-    <bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
-        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/javaweb?useSSL=false&amp;serverTimezone=UTC" />
-        <property name="username" value="root" />
-        <property name="password" value="root" />
-        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver" />
 
-        &lt;!&ndash; HikariCP 옵션 설정 &ndash;&gt;
-        <property name="maximumPoolSize" value="10" />
-        <property name="minimumIdle" value="5" />
-        <property name="idleTimeout" value="30000" />
-        <property name="connectionTimeout" value="30000" />
-        <property name="poolName" value="MyHikariCPPool" />
-    </bean>-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
 </beans>
