@@ -52,6 +52,11 @@ dependencies {
     implementation 'org.springframework:spring-test:5.3.16'
     implementation 'org.springframework:spring-webmvc:5.3.16'
 
+    // https://mvnrepository.com/artifact/com.mysql/mysql-connector-j
+    implementation 'com.mysql:mysql-connector-j:8.3.0'
+
+    implementation 'com.zaxxer:HikariCP:5.0.0'
+
 }
 
 test {
