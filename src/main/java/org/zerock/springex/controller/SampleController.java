@@ -34,5 +34,4 @@ public class SampleController {
     log.info("ex3....");
     log.info("dueDate: " + dueDate);
   }
-
 }
